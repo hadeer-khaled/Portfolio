@@ -80,7 +80,7 @@ nav .container ul li a {
   letter-spacing: 2px;
   padding-bottom: 10px;
 }
-nav ul li a::after {
+nav .container ul li a::after {
   content: " ";
   position: absolute;
   left: 0px;
@@ -487,11 +487,16 @@ nav ul li a:hover {
     transform: translateX(15px);
     color: var(--third-color);
   }
-  nav ul li a::after {
+  /* nav ul li a::after {
   height: 3px;
   background-color: transparent;
   transition: 0.3s;
-}
+} */
+  nav .container ul li a:hover::after {
+    height: 3px;
+    background-color: transparent;
+    transition: 0.3s;
+  }
   nav ul .fa-solid {
     position: absolute;
     top: 20px;
@@ -594,12 +599,12 @@ nav ul li a:hover {
   .landing {
     display: flex;
     flex-direction: row;
-}
-.landing .landing-img {
+  }
+  .landing .landing-img {
     width: 70%;
     margin-top: 0px;
-}
- nav .fa-solid {
+  }
+  nav .fa-solid {
     display: block;
     font-size: 25px;
   }
@@ -623,13 +628,17 @@ nav ul li a:hover {
     color: white;
     transition: 0.4s;
     border-color: none;
-  
   }
-    nav ul li a::after {
+  /* nav .container ul li a::after {
   height: 3px;
   background-color: transparent;
   transition: 0.3s;
-}
+} */
+  nav .container ul li a:hover::after {
+    height: 3px;
+    background-color: transparent;
+    transition: 0.3s;
+  }
   nav .container ul li:hover a {
     display: block;
     transform: translateX(15px);
@@ -642,31 +651,30 @@ nav ul li a:hover {
     left: 20px;
     color: white;
   }
-
 }
 
 @media (min-width: 800px) and (max-width: 1140px) {
-  .about{
+  .about {
     justify-content: space-between;
   }
-.about .left-col {
+  .about .left-col {
     width: 40%;
-}
-.about .left-col img {
-  width: 365px;
-}
-.about .right-col {
+  }
+  .about .left-col img {
+    width: 365px;
+  }
+  .about .right-col {
     width: 40%;
-}
-.services-list {
+  }
+  .services-list {
     justify-content: space-evenly;
     margin-top: 40px;
     flex-wrap: wrap;
-}
-.services-list div {
+  }
+  .services-list div {
     width: 46%;
     margin-bottom: 17px;
-}
+  }
 }
 /* @media (min-width: 600px) and (max-width: 1175px) {
 } */
