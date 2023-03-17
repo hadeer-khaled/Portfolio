@@ -486,8 +486,12 @@ nav ul li a:hover {
     display: block;
     transform: translateX(15px);
     color: var(--third-color);
-    border: none;
   }
+  nav ul li a::after {
+  height: 3px;
+  background-color: transparent;
+  transition: 0.3s;
+}
   nav ul .fa-solid {
     position: absolute;
     top: 20px;
@@ -618,12 +622,19 @@ nav ul li a:hover {
   nav .container ul li a {
     color: white;
     transition: 0.4s;
+    border-color: none;
+  
   }
+    nav ul li a::after {
+  height: 3px;
+  background-color: transparent;
+  transition: 0.3s;
+}
   nav .container ul li:hover a {
     display: block;
     transform: translateX(15px);
     color: var(--third-color);
-    border: none;
+    border-color: none;
   }
   nav ul .fa-solid {
     position: absolute;
